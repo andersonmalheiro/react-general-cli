@@ -9,30 +9,31 @@ You can create React Components easily, specifing what type of style you want to
 Install the package on your machine.
 
 Using npm:
+
 ```
 npm i -g react-general-cli
 ```
 
 Using yarn:
+
 ```
 yarn add global react-general-cli
 ```
 
+## Usage
 
-<!-- ## Publishing to NPM
+Currently there is only one command in the CLI that generates a React functional component on your `src / components` project folder. Let's see how to use:
 
-To package your CLI up for NPM, do this:
-
-```shell
-$ npm login
-$ npm whoami
-$ npm lint
-$ npm test
-(if typescript, run `npm run build` here)
-$ npm publish
+```
+react-general-cli rfc <component_name> [COMMANDS]
 ```
 
-# License
+By default this command creates a folder with the component's name containing a `.js` component and a styled-component file with a predefined container.
 
-MIT - see LICENSE
- -->
+## Available commands
+
+| Command | Alias | Cool                                                                                                                                                                       |
+| ------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| lang    | l     | Define the language extension you want to use in your component. Available extensions are `js`, `tsx` and `jsx`                                                            |
+| style   | s     | Define the style type you want to use. Available types are `css`, `scss` and `styled`. `styled` creates a styled-component container and import him in the component header. |
+| noStyle |       | Creates a component without style.                                                                                                                                                                        |
