@@ -28,12 +28,35 @@ Currently there is only one command in the CLI that generates a React functional
 react-general-cli rfc <component_name> [COMMANDS]
 ```
 
-By default this command creates a folder with the component's name containing a `.js` component and a styled-component file with a predefined container.
+By default this command creates a folder with the component's name containing a `.js` component and a styled-component file with a predefined container like the structure below.
+
+```
+| -- components
+    |-- <component_name>
+        |--   index.js
+        |--   style.js
+```
 
 ## Available commands
 
-| Command | Alias | Cool                                                                                                                                                                       |
-| ------- | ----- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| lang    | l     | Define the language extension you want to use in your component. Available extensions are `js`, `tsx` and `jsx`                                                            |
+| Command | Alias | Cool                                                                                                                                                                         |
+| ------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| lang    | l     | Define the language extension you want to use in your component. Available extensions are `js`, `tsx` and `jsx`                                                              |
 | style   | s     | Define the style type you want to use. Available types are `css`, `scss` and `styled`. `styled` creates a styled-component container and import him in the component header. |
-| noStyle |       | Creates a component without style.                                                                                                                                                                        |
+| noStyle |       | Creates a component without style.                                                                                                                                           |
+
+## Examples
+
+Generates a default component
+```
+react-general-cli rfc Header
+```
+
+Generates a typescript component
+```
+react-general-cli rfc Footer --lang=tsx
+```
+or
+```
+react-general-cli rfc Footer -l=tsx
+```
