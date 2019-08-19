@@ -39,7 +39,7 @@ By default this command creates a folder with the component's name containing a 
 
 ## Available commands
 
-| Command | Alias | Cool                                                                                                                                                                         |
+| Command | Alias | Description                                                                                                                                                                         |
 | ------- | ----- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | lang    | l     | Define the language extension you want to use in your component. Available extensions are `js`, `tsx` and `jsx`                                                              |
 | style   | s     | Define the style type you want to use. Available types are `css`, `scss` and `styled`. `styled` creates a styled-component container and import him in the component header. |
@@ -60,3 +60,10 @@ or
 ```
 react-general-cli rfc Footer -l=tsx
 ```
+
+## Roadmap
+
+- Add tests;
+- Add class components generator;
+- Add React Router generators;
+- Add Redux generators.
